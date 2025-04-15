@@ -1,29 +1,499 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patriarcha Hamburgueria e Pastelaria Show</title>
-    <link rel="stylesheet" href="styles.css"> <!--Link = Serve para configurar o link da página e trazer o CSS para o site-->
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #070202;
+            color: #fff;
+        }
+
+        header {
+            background-color: #e20606;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #bbb;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .menu-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #111;
+        }
+
+        .menu-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #222;
+            border: 1px solid #333;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            color: #fff;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 15px 0 10px;
+            font-size: 1.5em;
+        }
+
+        .menu-item p {
+            font-size: 1em;
+            color: #ccc;
+        }
+
+        .menu-item span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
-    <nav>  <!--Nav = Serve para configurar o menu de navegação da página-->
-        <h2>Patriarcha Hamburgueria e Pastelaria Show</h2>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="https://wa.me/5571983661452">Contato</a></li>
-        </ul>
+    <header>
+        <h1>Patriarcha Hamburgueria e Pastelaria Show</h1>
+    </header>
+
+    <nav>
+        <a href="#menu">Cardápio</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
     </nav>
-    <section> <!--Section = Serve para configurar a seção da página-->
-        <h1>Seja bem-vindo à Patriarcha Hamburgueria e Pastelaria Show!</h1>
-        <p>Este projeto tem o intuito de oferecer a melhor qualidade de serviço alimentícios na cidade baixa !</p>
-        <img src = "https://www.ideiasdecor.com/wp-content/uploads/2022/08/nomes-para-lanchonete-4.jpg"
-        alt="Imagem de hamburguer artesanal">
+
+    <section class="hero">
+        <h2>O Melhor Hambúrguer e Pastel da CBX!</h2>
+        <p>Sabores únicos preparados com paixão e ingredientes de qualidade.</p>
     </section>
-        <footer>    <!--Footer = Serve para configurar o rodapé (marca d'agua) da página-->
-        <p>João Flávio &copy; 2025 Projeto teste. Todos os direitos reservados.</p>
+    <hr style="width: 50%; margin: auto; border: 1px solid rgb(240, 10, 10);">
+    <h2 style="text-align: center; color: #fff;">Sanduíches</h2>
+    <section id="menu" class="menu-section">
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Hambúrguer Clássico">
+                <h3>Hambúrguer</h3>
+                <p>Pão, Carne e Salada.</p>
+                <span>R$ 7,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="pastel.jpg" alt="Pastel de Carne">
+                <h3>Misto</h3>
+                <p>Pão, Queijo e Presunto.</p>
+                <span>R$ 7,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Burguer</h3>
+                <p>Pão, Carne, Queijo e Salada.</p>
+                <span>R$ 9,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Americano</h3>
+                <p>Pão, Ovo, Queijo, Presunto e Salada.</p>
+                <span>R$ 10,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Salada</h3>
+                <p>Pão, Carne, Queijo, Presunto e Salada.</p>
+                <span>R$ 12,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Egg Burguer</h3>
+                <p>Pão, Carne, Queijo, Presunto, Ovo e Salada.</p>
+                <span>R$ 15,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Frango</h3>
+                <p>Pão, Frango, Queijo, Presunto e Salada.</p>
+                <span>R$ 15,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Calabresa</h3>
+                <p>Pão, Calabresa, Queijo, Presunto e Salada.</p>
+                <span>R$ 15,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Cheddar FTchefs</h3>
+                <p>Pão, Carne, Ovo, Cheddar, Queijo, Presunto e Salada.</p>
+                <span>R$ 17,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Cheddar Bacon</h3>
+                <p>Pão, Carne, Bacon, Cheddar e Salada.</p>
+                <span>R$ 18,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Egg Calabresa</h3>
+                <p>Pão, Carne, Calabresa, Ovo, Queijo, Presunto e Salada.</p>
+                <span>R$ 18,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Egg Frango</h3>
+                <p>Pão, Carne, Ovo, Frango, Queijo, Presunto e Salada.</p>
+                <span>R$ 18,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>X-Egg Bacon</h3>
+                <p>Pão, Carne, Ovo, Bacon, Queijo, Presunto e Salada.</p>
+                <span>R$ 20,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Tentação</h3>
+                <p>Pão, 2 Carnes, Bacon, Ovo, Queijo, Cheddar, Barbecue e Salada.</p>
+                <span>R$ 20,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Onda Maluca</h3>
+                <p>Pão, 2 Carnes, 2 Queijos, Ovo, Presunto, Cebola caramelizada e Salada</p>
+                <span>R$ 20,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Covardia</h3>
+                <p>Pão, Bacon, Calabresa, Cebola caramelizada, Queijo, Presunto e Salada.</p>
+                <span>R$ 20,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Terapia</h3>
+                <p>Pão, Carne, Bacon, Presunto, Frango, Calabresa, Molho especial, Queijo e Salada.</p>
+                <span>R$ 20,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Cavalo Doido</h3>
+                <p>Pão, Carne, Bacon, Frango, Calabresa, Molho especial, Queijo, Presunto e Salada</p>
+                <span>R$ 25,00</span>
+            </div>
+            <div class="menu-item">
+                <img src="combo.jpg" alt="Combo Família">
+                <h3>Da Casa</h3>
+                <p>Pão, Frango, Bacon, Milho, Cream Cheese, Cebola, Queijo, Azeitona, Molho especial e Salada</p>
+                <span>R$ 25,00</span>
+            </div>
+           
+
+    </section>
+    <hr style="width: 50%; margin: auto; border: 1px solid rgb(240, 10, 10);">
+    <h2 style="text-align: center; color: #fff;">Pastéis</h2>
+    <section id="sobre" class="menu-section">
+        <section id="menu-item"s" class="menu-items">
+        <div class="menu-item"
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Frango</h3>
+            <p>Frango com Queijo</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Carne</h3>
+            <p>Carne com Queijo</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Misto</h3>
+            <p>Queijo e Presunto</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Pizza</h3>
+            <p>Queijo, Presunto e orégano</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Love</h3>
+            <p>Frango, Queijo e Catupiry</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Top</h3>
+            <p>Carne, Queijo e Catupiry</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Calabresa</h3>
+            <p>Calabresa e Queijo</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Portuguesa</h3>
+            <p>Queijo, Presunto, Ovo e orégano</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>FT 1</h3>
+            <p>Frango com Catupiry ou Cheddar</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>FT 2</h3>
+            <p>Carne com Catupiry ou Cheddar</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Pastelando</h3>
+            <p>Frango, Calabresa, Queijo, Milho e Orégano</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Explosão</h3>
+            <p>Frango, Cream Cheese, Milho e Azeitona</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Baianinha</h3>
+            <p>Calabresa, Presunto, Queijo, Orégano, Pimenta Calabresa e Cebola</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Atração</h3>
+            <p>Calabresa, Queijo, Cream Cheese e Presunto</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Atum</h3>
+            <p>Atum com Queijo e Catupiry ou Atum com Queijo e Milho</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Sacanagem</h3>
+            <p>Frango, Queijo, Bacon e Orégano</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Especial</h3>
+            <p>Carne, Bacon, Queijo, Pimenta Calabresa e Orégano</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Delícia</h3>
+            <p>Frango, Queijo, e Doce de Goiaba</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Primavera</h3>
+            <p>Frango, Queijo e Presunto</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Baurú</h3>
+            <p>Carne de Hamburguer, Queijo, Presunto, Tomate e Orégano</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Romeu e Julieta</h3>
+            <p>Queijo e Doce de Goiabada</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Pancadão</h3>
+            <p>Calabresa, Catupiry e Milho</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Supremo</h3>
+            <p>Calabresa, Queijo, Presunto e Milho</p>
+            <span>R$ 15,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Queijo</h3>
+            <p>Queijo Mussarela</p>
+            <span>R$ 18,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Coalho</h3>
+            <p>Queijo Coalho, Melaço e Orégano</p>
+            <span>R$ 18,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Potente</h3>
+            <p>Carne Seca, Cream Cheese e Milho</p>
+            <span>R$ 20,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Jabar</h3>
+            <p>Carne Seca e Queijo Mussarela</p>
+            <span>R$ 20,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="pastel.jpg" alt="Pastel de Carne">
+            <h3>Camarão</h3>
+            <p>Camarão com Molho de Requeijão</p>
+            <span>R$ 20,00</span>
+        </div>
+        <section>
+            <section id="sobre" class="menu-section">
+                <section id="menu-item"s" class="menu-items">
+                <div class="menu-item"
+            <div class="menu-item">
+                <img src="pastel.jpg" alt="Adicionais">
+                <h3>Adicionais</h3>
+                <p>Milho</p>
+                <span>R$ 3,00</span>
+                <hr>
+                <p>Azeitona</p>
+                <span>R$ 3,00</span>
+                <hr>
+                <p>Catupiry</p>
+                <span>R$ 2,00</span>
+                <hr>
+                <p>Cheddar</p>
+                <span>R$ 2,00</span>
+                <hr>
+                <p>Cream Cheese</p>
+                <span>R$ 5,00</span>
+                <hr>
+                <p>Presunto</p>
+                <span>R$ 3,00</span>
+                <hr>
+                <p>Calabresa</p>
+                <span>R$ 5,00</span>
+                <hr>
+                <p>Bacon</p>
+                <span>R$ 5,00</span>
+                <hr>
+                <p>Frango</p>
+                <span>R$ 5,00</span>
+                <hr>
+                <p>Ovo</p>
+                <span>R$ 3,00</span>
+                <hr>
+                <p>Molho Verde</p>
+                <span>R$ 1,50</span>
+                <hr>
+                <p>Cebola caramelizada</p>
+                <span>R$ 3,00</span>
+                <hr>
+                <p>Carne de Hamburguer</p>
+                <span>R$ 5,00</span>
+            </div>
+        </section>
+        
+        <p>Desde 2025, a Patriarcha Hamburgueria e Pastelaria Show oferece qualidade e sabor incomparáveis. Cada prato é feito com ingredientes frescos e selecionados, garantindo a melhor experiência gastronômica para nossos clientes.</p>
+    </section>
+
+    <section id="contato" class="menu-section">
+        <h2>Contato</h2>
+        <p>Endereço: Rua das Nações Unidas, 123 - Vila Ruy Barbosa</p>
+        <p>Telefone: (71) 9 8366-1452</p>
+        <p>Email: flaviapatriarcha@outlook.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Patriarcha Hamburgueria e Pastelaria Show. Todos os direitos reservados.</p>
     </footer>
-    </body>
+</body>
 </html>
